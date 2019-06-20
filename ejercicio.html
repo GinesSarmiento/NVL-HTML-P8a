@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Práctica con elementos de bloque y en línea</title>
+</head>
+<body>
+	<h1>Práctica con elementos de bloque y en línea</h1>
+	<h2>Elementos en bloque</h2>
+	<p>Elementos que funcionan de forma independiente. Si no se indica lo contrario, generan un salto de línea.</p>
+	<address>address: aporta información de contacto para el elemento article más cercano o ancestro. También se puede aplicar al elemento body (a todo el documento).</address>
+	<article>article: representa un contenido independiente o reutilizable, puede ser un artículo, una entrada de un blog, un comentario de un usuario, o cualquier elemento independiente del contenido.</article>
+	<aside>aside: representa una seccion que está indirectamente relacionada con el contenido principal, se usa principalmente para los contenidos de las barras laterales, publicidad, información de perfil, enlaces relacionados, etc.</aside>
+	<p>audio: se utiliza para insertar un audio mediante un archivo o un enlace.</p>
+	<audio controls>
+		<source src="https://itunemachine.com/storage/cache/def857a1896786b391dbd08c9abddcf7.mp3" type="audio/mp3">
+			Tu navegador no soporta el elemento de audio.
+	</audio>
+	<blockquote cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/blockquote">blockquote: crea citas en bloque, marca las citas a otros autores o documentos.</blockquote>
+	<p>canvas: se utiliza para dibujar gráficos a través de secuencias de comandos.</p>
+	<canvas id="canvas" width="100" height="100">.</canvas>
+	<div>div: sirve para crear secciones o agrupar contenidos.</div>
+	<dl>dl: representa una lista de términos dt y de descripciones con elementos dl.
+		<dt>dt: muestra un término agrupado en una lista dl y con una definición dd.</dt>
+		<dd>dd: aporta detalles o una definición sobre un elemento dt en una lista de descripciones dl.</dd>
+	</dl>
+	<fieldset>fieldset: permite organizar en grupos los campos de un formulario.</fieldset>
+	<figure>figure: representa contenido independiente, puede ser una imagen, un diagrama, un fragmento de código, etc.
+		<figcaption>figcaption: representa un subtítulo o leyenda asociado al contenido de un elemento padre figure.</figcaption>
+	</figure>
+	<footer>footer: representa un pie de página.</footer>
+	<form>form: representa una sección con controles interactivos que permiten enviar información a un servidor.</form>
+	<p>h1-h6: representa 6 niveles de cabecera o títulos.<p>
+	<header>header: representa una sección de cabecera que puede contener elementos de navegación, logotipos, busquedas, etc.</header>
+	<hgroup>hgroup: representa el encabezado de una sección agrupando cabeceras h1-h6.</hgroup>
+	<p>hr/: sólo se usa una etiqueta y representa un cambio de tema entre párrafos, muestra una línea divisoria:<p>
+	<hr/>
+	<li>li: muestra el elemento de una lista contenida en ul u ol.</li>
+	<main>main: representa el contenido principal dentro del body.</main>
+	<nav>nav: crea un menú de navegación, dentro de él se añade una lista ul.</nav>
+	<p>noscript: aporta contenidos alternativos al alemento script, en caso de no que la aplicación no soporte el script, carga el contenido almacenado en noscript.</p>
+	<noscript>Aquí irá el contenido que se cargará</noscript>
+	<ol>ol: crea una lista de elementos li ordenada.</ol>
+	<output>output: representa el resultado de un cálculo</output>
+	<p>p: elemento de párrafo.          ...</p>
+	<pre>pre: representa texto preformateado, los espacios dentro de este elemento también son mostrados como están escritos.          ...</pre>
+	<section>section: representa una sección genérica de un documento.</section>
+	<table>table: representa datos en dos o más dimensiones. Usa elementos tr para almacenar una fila, th para los nombres de cabecera, td para los diferentes campos de una fila. Se pueden agrupar columnas con el elemento colgroup.</table>
+	<tfoot>tfoot: representa un pie de tabla.</tfoot>
+	<ul>ul: crea una lista de elementos li no ordenada.</ul>
+	<p>video: se utiliza para insertar un video mediante un archivo o un enlace.</p>
+	<video width="370" height="208" controls>
+	    <source type="video/mp4" src="https://static.videezy.com/system/resources/previews/000/005/341/original/Earth_Spin_Medium.mp4">
+	</video>
+
+	<h2>Elementos en línea</h2>
+	<p>Son elementos que se pueden utilizar dentro de un texto, para dotar de significado o formato a una parte de este o si se le indica, como un bloque. Si no se le indica, no genera un salto de línea.</p>
+	<p>
+	<a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/a">a:</a> crea un enlace otra páginna, a un elemento de la misma, a una direccion de correo, teléfono o cualquier URL.<br>
+	<abbr title="abreviatura">abbr:</abbr> representa la abreviación de un término.<br>
+	<acronym title="acronimo">acronym:</acronym> representa un acróniomo.<br>
+	<b>b:</b> muestra el texto en negrita (bold en inglés.<br>
+	<bdo dir="ltr">bdo:</bdo> permite modificar el orden de lectura <bdo dir="rtl">lectura</bdo>.<br>
+	<big>big:</big> muestra el texto con un tamaño de fuente mayor.<br>
+	br: genera un salto de linea en el texto, sólo tiene una etiqueta.<br>
+	<button>button:</button> muestra un botón con el que el usuario puede interactuar.<br>
+	<cite>cite:</cite> marca una referencia a una fuente, o el autor de un texto citado.<br>
+	<code>code:</code> marca el código de un programa.<br>
+	<dfn>dfn:</dfn> sirve para marcar el término que se quiere definir.<br>
+	<em>em:</em> sirve para marcar con énfasis las partes importantes de un texto.<br>
+	<i>i:</i> muestra el texto en cursiva (itálica).<br>
+	img: representa una imagen en el documento.
+	<img src="https://m.media-amazon.com/images/M/MV5BMjRiNDRhNGUtMzRkZi00MThlLTg0ZDMtNjc5YzFjYmFjMmM4XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_UY268_CR2,0,182,268_AL_.jpg" alt="Poster de la serie Rick y Morty"><br>
+	input: se usa para crear controles interactivos que reciben datos del usuario. Su comportamiento depende del atributo type (button, checkbox, color, date, datetime, dateime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text, time, url, week)
+	<input type="checkbox"><br>
+	<kbd>kdb:</kbd> marca el texto que tiene que introducir el usuario o la acción a realizar.<br>
+	<label>label:</label> representa una etiqueta para otro elemento, se puede asociar con el atributo for o situando el elemento dentro de elemento label.<br>
+	map: asociado a una imagen, sirve para convertir ciertas areas de dicha imagen en enlaces
+	<img src="" width="0" height="0" alt="" usemap="#mapa">
+	<map name="mapa">
+  		<area shape="rect" coords="0,0,82,126" href="" alt="">
+	</map><br>
+	objetct: define un objeto insertado en la página, puede cualquier elemento mutimedia(audio, video, Java applets, ActiveX, pdf, Flash u otra web). Permite pasar parámetros a plugings embebidos dentro del elemento.
+	<object width="0" height="0" data="f"></object>
+	<q cite="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/q">q:</q> crea citas en linea, marca citas a otros autores o documentos.<br>
+	<samp>samp:</samp> marca la salida o resultado de un programa.<br>
+	script: inserta o hace referencia a un script ejecutable.
+	<script>Aquí iria el código del script</script><br>
+	select: muestra un elemento desplegable en el que se pueden elegir varias opciones:
+	<select name="selector">
+		<option value="opcion1" selected>Opción 1</option>
+		<option value="opcion2">Opción 2</option>
+	</select><br>
+	<small>small:</small> muestra el texto con un tamaño de fuente menor.<br>
+	<span>span:</span> es un contenedor en linea, sirve para agrupar elementos en linea o aplicar estilo al texto.<br>
+	<strong>strong:</strong> sirve para marcar énfasis a partes importantes del texto.<br>
+	<sub>sub:</sub> sirve para mostrar subíndices.<br>
+	<sup>sup:</sup> sirve para mostrar superíndices.<br>
+	<textarea>textarea:</textarea> control para editar texto plano con varias líneas.<br>
+	time: sirve para representar una hora o fecha. <time datetime="20:30">20:30</time><br>
+	<tt>tt:</tt> muestra el texto con una fuente de ancho fijo<br>
+	<var>var:</var> marca variables de programas.
+	</p>
+	</body>
+	</html>
